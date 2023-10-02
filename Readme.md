@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
-* Студент: [Марина Прокопьева](https://up.htmlacademy.ru/htmlcss-individual/1/user/2406519).
-* Наставник: `Неизвестно`.
+- Студент: [Марина Прокопьева](https://up.htmlacademy.ru/htmlcss-individual/1/user/2406519).
+- Наставник: [Андрей Ефимов](https://github.com/efiand).
 
 ---
 
