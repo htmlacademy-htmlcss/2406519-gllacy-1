@@ -46,13 +46,112 @@
       </nav>
     </header>
 
-    <main>
+    <mainclass="main-index">
+
+      <section class="hero"> <!-- Не получается выделить секцию, чтобы сдвинуть сразу всю-->
+        <h1 class="visually-hidden">Глейси</h1>
+
+        <span class="visually-hidden">Назад</span>
+        <ul>
+          <li>
+            <h2 class="hero-pagination">Нежный пломбир с клубничным джемом</h2>  <!-- Работа с Figma? Не получается копировать текст. Объяснения в уроках и видео не помогли. Все ввожу по-неандертальски - вручную-->
+            <p>Натуральное мороженное из свежих сливок и молока с вкуснейшим клубничным джемом - это идеальный десерт для всей семьи.</p>
+            <button class="button" type="submit">Заказать</button>
+            <img src="#" alt="Нежный пломбир с клубничным джемом">
+          </li>
+          <li>
+            <h2 class="hero-pagination">Карамельный пломбир с маршмеллоу</h2>
+            <p>Необычный сладкий десерт с карамельным топпингом и кусочками зефира завоюет сердца сладкоежек всех возрастов.</p>
+            <button class="button" type="submit">Заказать</button>
+            <img src="#" alt="Карамельный пломбир с маршмеллоу">
+          </li>
+          <li>
+            <h2 class="hero-pagination">Сливочное мороженное со вкусом банана</h2>
+            <p>Сливочное мороженное с ярким банановым вкусом подарит вам свежесть и наслаждение даже в самый жаркий летний день.</p>
+            <button class="button" type="submit">Заказать</button>
+            <img src="#" alt="Сливочное мороженное со вкусом банана">
+          </li>
+        </ul>
+        <span class="visually-hidden">Вперед</span>
+
+        <footer  class="hero-footer">
+          <section class="hero-footer-social"> <!-- Може ли быть section внутри другого section или внутрь лучше ставить div ?-->
+            <ul class="hero-footer-social-list">
+              <li class="hero-footer-social-item">
+                <a class="button" href="#">
+                <span class="visually-hidden">Телеграм</span>
+              </a>
+              </li>
+              <li class="hero-footer-social-item">
+                <a class="button" href="#">
+                <span class="visually-hidden">ВКонтакте</span>
+              </a>
+              </li>
+              <li class="hero-footer-social-item">
+                <a class="button" href="#">
+                <span class="visually-hidden">YouTube</span>
+                </a>
+              </li>
+            </ul>
+          </section>
+       </footer>
+      </section>
+
 
     </main>
 
-    <footer>
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
-  </footer>
+    <footer  class="page-footer">
+
+      <section class="footer-social">
+        <ul class="footer-social-list">
+          <li class="footer-social-item">
+            <a class="button" href="#">
+              <span class="visually-hidden">Телеграм</span>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a class="button" href="#">
+              <span class="visually-hidden">ВКонтакте</span>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a class="button" href="#">
+              <span class="visually-hidden">YouTube</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="footer-about">
+        <ul class="footer-about-list">
+          <li class="footer-about-item">
+            <img src="#" alt="Сердце">
+            <a href="#"><strong>Для поставщиков</strong></a>
+          </li>
+          <li class="footer-about-item">
+            <a href="#">О производстве</a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="footer-documentation">
+        <ul class="footer-documentation-list">
+          <li class="footer-documentation-item">
+            <a href="#">Наши документы</a>
+          </li>
+          <li class="footer-about-item">
+            <a href="#">Экологические стандарты</a>
+          </li>
+        </ul>
+      </section>
+
+      <a><img src="#" alt=".htmlacademy"></a>
+
+      <p class="about-text">Сделано в <a
+        class="htmlacademy-link" href="https://htmlacademy.ru/">.html
+        academy</a></p>
+
+    </footer>
 
   </body>
 </html>
