@@ -61,21 +61,59 @@
           <h1>Сливочное мороженое</h1>
         </section>
 
-        <section class="filter"></section>
-          <form action="#" method="post">
-            <p class="about-text">Сортировка</p>
+        <section class="filter">
+          <form action="#" method="get">
+
+            <fieldset>
+              <legend>Сортировка</legend>
+              <select name="sorting">
+                <option value="">по популярности</option>
+                <option value=""> по рейтингу</option>
+                <option value="">по возрастанию цены</option>
+                <option value="">по убыванию цены</option>
+              </select>
+            </fieldset>
+
+            <fieldset>
+              <legend>Цена: 100₽ - 500₽</legend>
+            <!-- <dl><dd><div class="prise-level" style="width: 10%;">10%</div></dd></dl> -->
+            <!--не знаю как шкалу сделать без CSS -->
+            </fieldset>
+            <fieldset>
+
+              <legend>Жирность</legend>
+              <label>
+                <input type="radio" name="percent-fat" value="0">
+                0%
+              </label>
+              <label>
+                <input type="radio" name="percent-fat" value="10" checked>
+                10%
+              </label>
+              <label>
+                <input type="radio" name="percent-fat" value="30">
+                30%
+              </label>
+              <label>
+                <input type="radio" name="percent-fat" value="больше-30">
+                больше 30%
+              </label>
+            </fieldset>
+
+            <fieldset>
+              <legend>Наполнители</legend>
+              <label><input type="checkbox" name="filler" value="chocolate" checked>шоколадные</label>
+              <label><input type="checkbox" name="filler" value="sugar" checked>сахарные посыпки</label>
+              <label><input type="checkbox" name="filler" value="fruit">фрукты</label>
+              <label><input type="checkbox" name="filler" value="syrup">сиропы</label>
+              <label><input type="checkbox" name="filler" value="jam">джемы</label>
+            <fieldset>
+
           </form>
-          <form action="#" method="post">
-            <p class="about-text">Цена: 100₽ - 500₽</p>
-          </form>
-          <form action="#" method="post">
-            <p class="about-text">Жирность</p>
-          </form>
-          <form action="#" method="post">
-            <p class="about-text">Наполнители</p>
-          </form>
-          <button class="hero-catalog-creamy-button" type="submit">Применить</button>
-      </section>
+
+        </section>
+         <button class="hero-catalog-creamy-button" type="submit">Применить</button>  <!--кнопка осталась без секции -->
+
 
       <section class="page-catalog-creamy">
         <ul class="popular-list">
