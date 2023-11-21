@@ -9,7 +9,7 @@
   <body>
     <header class="page-header">
       <nav class="navigation">
-        <a><img class="logo" src="#" alt="Глейси"></a>
+        <a><img class="logo" src="images/general/logo.svg" width="137" height="56" alt="Глейси"></a>
         <ul class="navigation-list">
           <li class="navigation-item">
             <button class="page-button" type="button">Каталог</button>
@@ -31,16 +31,21 @@
 
           <li class="navigation-item">
             <a class="navigation-link" href="#">
+              <img class="search" src="images/general/Search.svg" width="16" height="17" alt="Поиск">
               <span class="visually-hidden">Поиск</span>
             </a>
           </li>
 
           <li class="navigation-item">
-            <a class="navigation-link">Вход</a>
+            <a class="navigation-link" href="#">
+              <img class="log-in" src="images/general/Log-in.svg" width="16" height="17" alt="Вход">
+              <span>Вход</span>
+            </a>
           </li>
 
           <li class="navigation-item">
             <a class="navigation-link" href="#">
+              <img class="log-in" src="images/general/Cart.svg" width="16" height="17" alt="Корзина">
               <span class="visually-hidden">Корзина</span>
             </a>
           </li>
@@ -50,7 +55,10 @@
     <main class="main-index">
       <section class="hero">
         <h1 class="visually-hidden">Глейси</h1>
-        <button class="hero-gallery-btn" type="button"><span class="visually-hidden">Назад</span></button>
+        <button class="hero-gallery-btn" type="button">
+          <img src="images/main/Arrow-left.svg" width="17" height="16" alt="Стрелка влево">
+          <span class="visually-hidden">Назад</span>
+        </button>
         <ul>
           <li>
             <h2 class="hero-title">Нежный пломбир с клубничным джемом</h2>
@@ -60,15 +68,8 @@
             <!-- либо это ссылка на другую страницу, и параметры этой ссылки обрабатываются так, что товар добавляется в корзину на сервере и/или в браузере. -->
             <!-- либо это  форма (form action) отправки данных о заказе на сервер с единственной кнопкой с type="submit"-->
             <!-- либо связать все три кнопки со скрытой формой через атрибут form. -->
-            <img src="#" alt="Нежный пломбир с клубничным джемом">
-          </li>
-
-          <li>
-            <h2 class="hero-title">Карамельный пломбир с маршмеллоу</h2>
-            <p>Необычный сладкий десерт с карамельным топпингом и кусочками зефира завоюет сердца сладкоежек всех
-              возрастов.</p>
-            <button class="button button-all" type="button">Заказать</button>
-            <img src="#" alt="Карамельный пломбир с маршмеллоу">
+            <img src="images/main/strawberry-ice-cream.png" width="327" height="507"
+              alt="Нежный пломбир с клубничным джемом">
           </li>
 
           <li>
@@ -76,10 +77,23 @@
             <p>Сливочное мороженое с ярким банановым вкусом подарит вам свежесть и наслаждение даже в самый жаркий
               летний день.</p>
             <button class="button button-all" type="button">Заказать</button>
-            <img src="#" alt="Сливочное мороженное со вкусом банана">
+            <img src="images/main/banana-ice-cream.jpg" width="312" height="507"
+              alt="Сливочное мороженное со вкусом банана">
+          </li>
+
+          <li>
+            <h2 class="hero-title">Карамельный пломбир с маршмеллоу</h2>
+            <p>Необычный сладкий десерт с карамельным топпингом и кусочками зефира завоюет сердца сладкоежек всех
+              возрастов.</p>
+            <button class="button button-all" type="button">Заказать</button>
+            <img src="images/main/caramel-ice-cream.jpg" width="350" height="507"
+              alt="Карамельный пломбир с маршмеллоу">
           </li>
         </ul>
-        <button class="hero-gallery-btn" type="button"><span class="visually-hidden">Вперед</span></button>
+        <button class="hero-gallery-btn" type="button">
+          <img src="images/main/Arrow-right.svg" width="17" height="16" alt="Стрелка вправо">
+          <span class="visually-hidden">Вперед</span>
+        </button>
 
         <ol class="slider-pagination">
           <li class="slider-pagination-item">
@@ -103,18 +117,21 @@
         <ul class="social-list social-list-hero">
           <li class="social-item">
             <a class="social-link" href="https://t.me/htmlacademy">
+              <img src="images/social/telegram.svg" width="16" height="16" alt="Телеграм">
               <span class="visually-hidden">Телеграм</span>
             </a>
           </li>
 
           <li class="social-item">
             <a class="social-link" href="https://vk.com/htmlacademy">
+              <img src="images/social/vk.svg" width="16" height="16" alt="ВКонтакте">
               <span class="visually-hidden">ВКонтакте</span>
             </a>
           </li>
 
           <li class="social-item">
             <a class="social-link" href="https://www.youtube.com/user/htmlacademy">
+              <img src="images/social/youtube.svg" width="16" height="16" alt="YouTube">
               <span class="visually-hidden">YouTube</span>
             </a>
           </li>
@@ -131,6 +148,7 @@
             <p class="presents-description">При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку
               малинового варенья бесплатно.</p>
             <button class="button" type="button">Хочу подарок</button>
+            <img src="images/main/raspberry.jpg" width="219" height="268" alt="Малинка в подарок">
           </li>
 
           <li class="presents-item">
@@ -138,6 +156,7 @@
             <p class="presents-description">При покупке 2 кг пломбира добавим в ваш заказ упаковку нежных зефирок
               совершенно бесплатно.</p>
             <button class="button" type="button">Хочу подарок</button>
+            <img src="images/main/marshmallow.jpg" width="219" height="268" alt="Маршмеллоу в подарок">
           </li>
         </ul>
       </section>
@@ -146,7 +165,7 @@
         <h2 class="main-heading">Попробуйте самые популярные вкусы нашего мороженого</h2>
         <ul class="catalog-list">
           <li class="catalog-item">
-            <img src="#" alt="Малинка">
+            <img src="images/catalog/raspberry-card.png" width="168" height="168" alt="Малинка">
             <h3>Малинка</h3>
             <p>Сливочное мороженое с малиновым джемом</p>
             <b class="services-price">310 ₽/кг</b>
@@ -154,7 +173,7 @@
           </li>
 
           <li class="catalog-item">
-            <img src="#" alt="Фисташка">
+            <img src="images/catalog/pistachio-card.png" width="168" height="168" alt="Фисташка">
             <h3>Фисташка</h3>
             <p>Фисташковый пломбир с кусочками шоколада</p>
             <b class="services-price">340 ₽/кг</b>
@@ -162,7 +181,7 @@
           </li>
 
           <li class="catalog-item">
-            <img src="#" alt="Черника">
+            <img src="images/catalog/blueberry-card.png" width="168" height="168" alt="Черника">
             <h3>Черника</h3>
             <p>Крем-брюле с черничным джемом</p>
             <b class="services-price">330 ₽/кг</b>
@@ -170,7 +189,7 @@
           </li>
 
           <li class="catalog-item">
-            <img src="#" alt="Бабл-гам">
+            <img src="images/catalog/bubble-gum-card.png" width="168" height="168" alt="Бабл-гам">
             <h3>Бабл-гам</h3>
             <p>Ванильный пломбир со сладкой посыпкой</p>
             <b class="services-price">320 ₽/кг</b>
@@ -185,21 +204,25 @@
           развес</h2>
         <ul class="about-list">
           <li class="about-item">
+            <img src="images/main/ice-cream.svg" width="32" height="32" alt="Мороженое собственного производства">
             <p>Всё наше мороженое изготавливается на собственном производстве с использованием современного оборудования
               и провренных временем технологий.</p>
           </li>
 
           <li class="about-item">
+            <img src="images/main/leaf.svg" width="32" height="32" alt="Мороженое из натурального сырья">
             <p>Для приготовления мороженого используются сливки и молоко высочайшего качетва. Все ингридиенты и добавки
               произведены из натурального сырья.</p>
           </li>
 
           <li class="about-item">
+            <img src="images/main/cow.svg" width="33" height="32" alt="Ингридиенты мороженого от проверенных фермеров">
             <p>Закупка ингридиентов производится только у проверенных фермерских хозяйств, с которыми нас связывает
               долговременное сотрудничество.</p>
           </li>
 
           <li class="about-item">
+            <img src="images/main/thermometer.svg" width="32" height="32" alt="Специальные условия доставки мороженого">
             <p>Доставка нашего мороженого осуществляется в специальном термопакете, который не даёт мороженому растаять
               и позволяет сохранить превосходный вкус.</p>
           </li>
@@ -270,18 +293,21 @@
       <ul class="social-list">
         <li class="social-item">
           <a class="social-link" href="https://t.me/htmlacademy">
+            <img src="images/social/telegram.svg" width="16" height="16" alt="Телеграм">
             <span class="visually-hidden">Телеграм</span>
           </a>
         </li>
 
         <li class="social-item">
           <a class="social-link" href="https://vk.com/htmlacademy">
+            <img src="images/social/vk.svg" width="16" height="16" alt="ВКонтакте">
             <span class="visually-hidden">ВКонтакте</span>
           </a>
         </li>
 
         <li class="social-item">
           <a class="social-link" href="https://www.youtube.com/user/htmlacademy">
+            <img src="images/social/youtube.svg" width="16" height="16" alt="YouTube">
             <span class="visually-hidden">YouTube</span>
           </a>
         </li>
@@ -289,6 +315,7 @@
 
       <ul class="footer-about-list">
         <li class="footer-about-item">
+          <img src="images/general/Heart-fill.svg" width="16" height="16" alt="Эмоция-сердце">
           <a href="#"><strong>Для поставщиков</strong></a>
         </li>
 
@@ -307,7 +334,9 @@
         </li>
       </ul>
       <div>
-        <a href="https://htmlacademy.ru/"><img src="#" alt=".htmlacademy"></a>
+        <a href="https://htmlacademy.ru/">
+          <img src="images/general/logo_htmlacademy.svg" width="93" height="26.71" alt=".htmlacademy">
+        </a>
         <p class="about-text">
           Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a>
         </p>
