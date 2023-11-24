@@ -9,14 +9,16 @@
   <body>
     <header class="page-header">
       <nav class="navigation">
-        <a><img class="logo" src="index.html" alt="Глейси"></a>
+        <a href="index.html"><img class="logo" src="images/logos/logo.svg" width="137" height="56" alt="Глейси"></a>
         <ul class="navigation-list">
           <li class="navigation-item">
             <button class="page-button" type="button">Каталог</button>
           </li>
+
           <li class="navigation-item">
             <a class="navigation-link" href="#">Доставка и оплата</a>
           </li>
+
           <li class="navigation-item">
             <a class="navigation-link" href="#">О компании</a>
           </li>
@@ -34,7 +36,9 @@
           </li>
 
           <li class="navigation-item">
-            <a class="navigation-link">Вход</a>
+            <a class="navigation-link" href="#">
+              <span>Вход</span>
+            </a>
           </li>
 
           <li class="navigation-item">
@@ -47,9 +51,11 @@
     </header>
     <main>
       <section class="breadcrumbs">
-        <a href="index.html">Главная</a>
-        <a href="#">Каталог</a>
-        <a href="catalog-creamy.html"> Сливочное мороженое</a>
+        <ol>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="#">Каталог</a></li>
+          <li><a href="catalog-creamy.html">Сливочное мороженое</a></li>
+        </ol>
       </section>
       <h1>Сливочное мороженое</h1>
       <form action="#" method="get">
@@ -70,10 +76,10 @@
 
         <fieldset>
           <legend>Жирность</legend>
-          <label><input type="radio" name="percent-fat" value="0">0%</label>
-          <label><input type="radio" name="percent-fat" value="10" checked>10%</label>
-          <label><input type="radio" name="percent-fat" value="30">30%</label>
-          <label><input type="radio" name="percent-fat" value="gt30">больше 30%</label>
+          <label><input type="radio" name="percent_fat" value="0">0%</label>
+          <label><input type="radio" name="percent_fat" value="10" checked>10%</label>
+          <label><input type="radio" name="percent_fat" value="30">30%</label>
+          <label><input type="radio" name="percent_fat" value="gt30">больше 30%</label>
         </fieldset>
 
         <fieldset>
@@ -86,13 +92,13 @@
         </fieldset>
 
         <fieldset>
-          <button class="hero-catalog-creamy-button" type="button">Применить</button>
+          <button class="hero-catalog-creamy-button" type="submit">Применить</button>
         </fieldset>
       </form>
       <section class="page-catalog-creamy">
         <ul class="catalog-list">
           <li class="catalog-item">
-            <img src="#" alt="Малинка">
+            <img src="images/catalog/raspberry-card.png" width="168" height="168" alt="Малинка">
             <h3>Малинка</h3>
             <p>Сливочное мороженое с малиновым джемом</p>
             <b class="services-price">310 ₽/кг</b>
@@ -100,7 +106,7 @@
           </li>
 
           <li class="catalog-item">
-            <img src="#" alt="Фисташка">
+            <img src="images/catalog/pistachio-card.png" width="168" height="168" alt="Фисташка">
             <h3>Фисташка</h3>
             <p>Фисташковый пломбир с кусочками шоколада</p>
             <b class="services-price">340 ₽/кг</b>
@@ -108,7 +114,7 @@
           </li>
 
           <li class="catalog-item">
-            <img src="#" alt="Черника">
+            <img src="images/catalog/blueberry-card.png" width="168" height="168" alt="Черника">
             <h3>Черника</h3>
             <p>Крем-брюле с черничеым джемом</p>
             <b class="services-price">330 ₽/кг</b>
@@ -116,7 +122,7 @@
           </li>
 
           <li class="catalog-item">
-            <img src="#" alt="Бабл-гам">
+            <img src="images/catalog/bubble-gum-card.png" width="168" height="168" alt="Бабл-гам">
             <h3>Бабл-гам</h3>
             <p>Ванильный пломбир со сладкой посыпкой</p>
             <b class="services-price">320 ₽/кг</b>
@@ -124,7 +130,7 @@
           </li>
 
           <li class="catalog-item">
-            <img src="#" alt="Ежевика">
+            <img src="images/catalog/blackberry-card.png" width="168" height="168" alt="Ежевика">
             <h3>Ежевика</h3>
             <p>Сливочное мороженое с ежевичным джемом</p>
             <b class="services-price">330 ₽/кг</b>
@@ -132,7 +138,7 @@
           </li>
 
           <li class="catalog-item">
-            <img src="#" alt="Банан">
+            <img src="images/catalog/banana-card.png" width="168" height="168" alt="Банан">
             <h3>Банан</h3>
             <p>Сливочный пломбир с банановым вкусом</p>
             <b class="services-price">340 ₽/кг</b>
@@ -140,7 +146,7 @@
           </li>
 
           <li class="catalog-item">
-            <img src="#" alt="Шоколадка">
+            <img src="images/catalog/chocolate-card.png" width="168" height="168" alt="Шоколадка">
             <h3>Шоколадка</h3>
             <p>Классический шоколадный пломбир</p>
             <b class="services-price">270 ₽/кг</b>
@@ -148,7 +154,7 @@
           </li>
 
           <li class="catalog-item">
-            <img src="#" alt="Клубничка">
+            <img src="images/catalog/strawberry-card.png" width="168" height="168" alt="Клубничка">
             <h3>Клубничка</h3>
             <p>Сливочный пломбир с клубничным вкусом</p>
             <b class="services-price">300 ₽/кг</b>
@@ -156,7 +162,7 @@
           </li>
 
           <li class="catalog-item">
-            <img src="#" alt="Лимон">
+            <img src="images/catalog/lemon-card.png" width="168" height="168" alt="Лимон">
             <h3>Лимон</h3>
             <p>Освежающий лимонный сорбет</p>
             <b class="services-price">310 ₽/кг</b>
@@ -164,7 +170,7 @@
           </li>
 
           <li class="catalog-item">
-            <img src="#" alt="Ментол">
+            <img src="images/catalog/menthol-card.png" width="168" height="168" alt="Ментол">
             <h3>Ментол</h3>
             <p>Сливочный пломбир с ментоловым сиропом</p>
             <b class="services-price">320 ₽/кг</b>
@@ -172,7 +178,7 @@
           </li>
 
           <li class="catalog-item">
-            <img src="#" alt="Орешек">
+            <img src="images/catalog/nut-card.png" width="168" height="168" alt="Орешек">
             <h3>Орешек</h3>
             <p>Фисташковый пломбир с шоколадным сиропом</p>
             <b class="services-price">360 ₽/кг</b>
@@ -180,7 +186,7 @@
           </li>
 
           <li class="catalog-item">
-            <img src="#" alt="Крем-брюле">
+            <img src="images/catalog/creme-brulee-card.png" width="168" height="168" alt="Крем-брюле">
             <h3>Крем-брюле</h3>
             <p>Классическое крем-брюле</p>
             <b class="services-price">280 ₽/кг</b>
@@ -191,7 +197,7 @@
         <ul class="pagination">
           <li class="pagination-item">
             <a class="pagination-link pagination-prev pagination-disabled">
-              <span>&lt;</span>
+              <span class="visually-hidden">Вперед</span>
             </a>
           </li>
 
@@ -217,7 +223,7 @@
 
           <li class="pagination-item">
             <a class="pagination-link pagination-next" href="#">
-              <span>&gt;</span>
+              <span class="visually-hidden">Назад</span>
             </a>
           </li>
         </ul>
@@ -226,19 +232,19 @@
     <footer class="page-footer">
       <ul class="social-list">
         <li class="social-item">
-          <a class="social-link" href="#">
+          <a class="social-link" href="https://t.me/htmlacademy">
             <span class="visually-hidden">Телеграм</span>
           </a>
         </li>
 
         <li class="social-item">
-          <a class="social-link" href="#">
+          <a class="social-link" href="https://vk.com/htmlacademy">
             <span class="visually-hidden">ВКонтакте</span>
           </a>
         </li>
 
         <li class="social-item">
-          <a class="social-link" href="#">
+          <a class="social-link" href="https://www.youtube.com/user/htmlacademy">
             <span class="visually-hidden">YouTube</span>
           </a>
         </li>
@@ -246,7 +252,6 @@
 
       <ul class="footer-about-list">
         <li class="footer-about-item">
-          <img src="#" alt="Сердце">
           <a href="#"><strong>Для поставщиков</strong></a>
         </li>
 
@@ -256,6 +261,7 @@
       </ul>
 
       <ul class="footer-documentation-list">
+        <!-- возможно это единый список с  class="footer-about-list" ЗАМЕНИТЬ при понимании как это стилизовать -->
         <li class="footer-documentation-item">
           <a href="#">Наши документы</a>
         </li>
@@ -264,7 +270,9 @@
           <a href="#">Экологические стандарты</a>
         </li>
       </ul>
-      <a><img src="#" alt=".htmlacademy"></a>
+      <a href="https://htmlacademy.ru/">
+        <img src="images/general/logo-htmlacademy.svg" width="93" height="27" alt=".htmlacademy">
+      </a>
       <p class="about-text">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a></p>
     </footer>
   </body>
