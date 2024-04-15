@@ -60,8 +60,6 @@ body {
 /* HEADER */
 
 .page-header {
-  display: flex;
-  justify-content: space-between;
   line-height: 1.25;
 }
 
@@ -71,11 +69,8 @@ body {
   align-items: center;
 }
 
-.navigation-item {
-  padding: 8px 16px;
-}
-
 .navigation-link {
+  padding: 8px 16px;
   text-align: center;
   text-decoration: none;
   color: inherit;
@@ -94,7 +89,8 @@ body {
 
 .navigation-user {
   display: flex;
-  /* flex-wrap: nowrap; */
+  flex-wrap: wrap;
+  justify-content: flex-end;
   width: 431px;
   margin-left: auto;
   padding: 0;
@@ -102,12 +98,19 @@ body {
   gap: 16px;
 }
 
+.navigation-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 575px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 .phone {
-  width: 148px;
   font-weight: 700;
   text-decoration: none;
   color: inherit;
-  gap: 16px;
 }
 
 .user-data {
@@ -121,6 +124,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
+  margin-bottom: 44px;
 }
 
 .filters-submit {
@@ -134,10 +138,6 @@ body {
 
 /* MAIN */
 
-.breadcrumbs-link {
-  display: flex;
-}
-
 .breadcrumbs {
   display: flex;
   list-style: none;
@@ -146,7 +146,7 @@ body {
   gap: 8px;
 }
 
-.breadcrumbs-title {
+.main-title {
   margin: 0;
   margin-bottom: 40px;
   padding: 0;
@@ -370,16 +370,7 @@ body {
   color: inherit;
 }
 
-.navigation-list {
-  display: flex;
-  width: 575px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-
-.main-link {
+.breadcrumbs-link {
   text-decoration: none;
   color: inherit;
 }
@@ -390,6 +381,8 @@ body {
 .page-footer {
   display: flex;
   justify-content: space-between;
+  padding: 48px;
+  gap: 40px;
 }
 
 .page-footer a {
@@ -406,6 +399,8 @@ body {
 }
 
 .social-list {
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -413,24 +408,19 @@ body {
 }
 
 .footer-about-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  width: 356px;
+  display: grid;
+  grid-template-columns: auto auto;
+  align-content: start;
   margin: 0;
   padding: 0;
   list-style: none;
-  gap: 8px 8px;
-}
-
-.footer-owner {
-  display: flex;
-  justify-content: center;
-  /* align-items: stretch; */
-  flex-wrap: wrap;
-  align-content: space-between;
+  gap: 8px 24px;
 }
 
 .footer-link {
   text-decoration: none;
+}
+
+.about-text {
+  margin: 0;
 }
