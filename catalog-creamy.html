@@ -52,18 +52,29 @@
           </li>
 
           <li>
-            <a class="navigation-link" href="#">
+            <a class="navigation-link user-link user-icon" href="#">
               <span class="visually-hidden">Поиск</span>
+              <svg class="navigation-icon" width="16" height="16" aria-hidden="true" focusable="false">
+                <use href="images/icons/search.svg#search"></use>
+              </svg>
             </a>
           </li>
 
           <li>
-            <a class="navigation-link user-data" href="#">Вход</a>
+            <a class="navigation-link user-link" href="#">
+              <svg class="navigation-icon" width="16" height="16" aria-hidden="true" focusable="false">
+                <use href="images/icons/log-in.svg#log-in"></use>
+              </svg>
+              Вход
+            </a>
           </li>
 
           <li>
-            <a class="navigation-link user-data" href="#">
+            <a class="navigation-link user-link" href="#">
               <span class="visually-hidden">Корзина</span>
+              <svg class="navigation-icon" width="16" height="16" aria-hidden="true" focusable="false">
+                <use href="images/icons/cart.svg#cart"></use>
+              </svg>
               2 товара
             </a>
           </li>
@@ -72,9 +83,21 @@
     </header>
     <main class="main-container">
       <ol class="breadcrumbs">
-        <li><a class="breadcrumbs-link" href="index.html">Главная</a></li>
-        <li><a class="breadcrumbs-link" href="#">Каталог</a></li>
-        <li><a class="breadcrumbs-link" href="catalog-creamy.html">Сливочное мороженое</a></li>
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link" href="index.html">Главная</a>
+          <svg class="breadcrumbs-icon" width="12" height="12" aria-hidden="true" focusable="false">
+            <use href="images/icons/chevrons-right.svg#chevrons-right"></use>
+          </svg>
+        </li>
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link" href="#">Каталог</a>
+          <svg class="breadcrumbs-icon" width="12" height="12" aria-hidden="true" focusable="false">
+            <use href="images/icons/chevrons-right.svg#chevrons-right"></use>
+          </svg>
+        </li>
+        <li>
+          <a class="breadcrumbs-link breadcrumbs-link-current" href="catalog-creamy.html">Сливочное мороженое</a>
+        </li>
       </ol>
       <h1 class="main-title">Сливочное мороженое</h1>
       <form class="filters" action="https://echo.htmlacademy.ru" method="get">
@@ -122,7 +145,12 @@
             <p class="catalog-text">Сливочное мороженое с малиновым джемом</p>
             <div class="catalog-footer">
               <b class="catalog-price">310 ₽/кг</b>
-              <button class="basket-button" type="button"><span class="visually-hidden">В корзину</span></button>
+              <button class="basket-button" type="button">
+                <span class="visually-hidden">В корзину</span>
+                <svg class="basket-icon" width="16" height="16" aria-hidden="true" focusable="false">
+                  <use href="images/icons/cart.svg#cart"></use>
+                </svg>
+              </button>
             </div>
           </li>
 
@@ -132,7 +160,12 @@
             <p class="catalog-text">Фисташковый пломбир с кусочками шоколада</p>
             <div class="catalog-footer">
               <b class="catalog-price">340 ₽/кг</b>
-              <button class="basket-button" type="button"><span class="visually-hidden">В корзину</span></button>
+              <button class="basket-button" type="button">
+                <span class="visually-hidden">В корзину</span>
+                <svg class="basket-icon" width="16" height="16" aria-hidden="true" focusable="false">
+                  <use href="images/icons/cart.svg#cart"></use>
+                </svg>
+              </button>
             </div>
           </li>
 
@@ -142,7 +175,12 @@
             <p class="catalog-text">Крем-брюле с черничным джемом</p>
             <div class="catalog-footer">
               <b class="catalog-price">330 ₽/кг</b>
-              <button class="basket-button" type="button"><span class="visually-hidden">В корзину</span></button>
+              <button class="basket-button" type="button">
+                <span class="visually-hidden">В корзину</span>
+                <svg class="basket-icon" width="16" height="16" aria-hidden="true" focusable="false">
+                  <use href="images/icons/cart.svg#cart"></use>
+                </svg>
+              </button>
             </div>
           </li>
 
@@ -152,7 +190,12 @@
             <p class="catalog-text">Ванильный пломбир со сладкой посыпкой</p>
             <div class="catalog-footer">
               <b class="catalog-price">320 ₽/кг</b>
-              <button class="basket-button" type="button"><span class="visually-hidden">В корзину</span></button>
+              <button class="basket-button" type="button">
+                <span class="visually-hidden">В корзину</span>
+                <svg class="basket-icon" width="16" height="16" aria-hidden="true" focusable="false">
+                  <use href="images/icons/cart.svg#cart"></use>
+                </svg>
+              </button>
             </div>
           </li>
 
@@ -162,7 +205,12 @@
             <p class="catalog-text">Сливочное мороженое с ежевичным джемом</p>
             <div class="catalog-footer">
               <b class="catalog-price">330 ₽/кг</b>
-              <button class="basket-button" type="button"><span class="visually-hidden">В корзину</span></button>
+              <button class="basket-button" type="button">
+                <span class="visually-hidden">В корзину</span>
+                <svg class="basket-icon" width="16" height="16" aria-hidden="true" focusable="false">
+                  <use href="images/icons/cart.svg#cart"></use>
+                </svg>
+              </button>
             </div>
           </li>
 
@@ -172,7 +220,12 @@
             <p class="catalog-text">Сливочный пломбир с банановым вкусом</p>
             <div class="catalog-footer">
               <b class="catalog-price">340 ₽/кг</b>
-              <button class="basket-button" type="button"><span class="visually-hidden">В корзину</span></button>
+              <button class="basket-button" type="button">
+                <span class="visually-hidden">В корзину</span>
+                <svg class="basket-icon" width="16" height="16" aria-hidden="true" focusable="false">
+                  <use href="images/icons/cart.svg#cart"></use>
+                </svg>
+              </button>
             </div>
           </li>
 
@@ -182,7 +235,12 @@
             <p class="catalog-text">Классический шоколадный пломбир</p>
             <div class="catalog-footer">
               <b class="catalog-price">270 ₽/кг</b>
-              <button class="basket-button" type="button"><span class="visually-hidden">В корзину</span></button>
+              <button class="basket-button" type="button">
+                <span class="visually-hidden">В корзину</span>
+                <svg class="basket-icon" width="16" height="16" aria-hidden="true" focusable="false">
+                  <use href="images/icons/cart.svg#cart"></use>
+                </svg>
+              </button>
             </div>
           </li>
 
@@ -193,7 +251,12 @@
             <p class="catalog-text">Сливочный пломбир с клубничным вкусом</p>
             <div class="catalog-footer">
               <b class="catalog-price">300 ₽/кг</b>
-              <button class="basket-button" type="button"><span class="visually-hidden">В корзину</span></button>
+              <button class="basket-button" type="button">
+                <span class="visually-hidden">В корзину</span>
+                <svg class="basket-icon" width="16" height="16" aria-hidden="true" focusable="false">
+                  <use href="images/icons/cart.svg#cart"></use>
+                </svg>
+              </button>
             </div>
           </li>
 
@@ -203,7 +266,12 @@
             <p class="catalog-text">Освежающий лимонный сорбет</p>
             <div class="catalog-footer">
               <b class="catalog-price">310 ₽/кг</b>
-              <button class="basket-button" type="button"><span class="visually-hidden">В корзину</span></button>
+              <button class="basket-button" type="button">
+                <span class="visually-hidden">В корзину</span>
+                <svg class="basket-icon" width="16" height="16" aria-hidden="true" focusable="false">
+                  <use href="images/icons/cart.svg#cart"></use>
+                </svg>
+              </button>
             </div>
           </li>
 
@@ -213,7 +281,12 @@
             <p class="catalog-text">Сливочный пломбир с ментоловым сиропом</p>
             <div class="catalog-footer">
               <b class="catalog-price">320 ₽/кг</b>
-              <button class="basket-button" type="button"><span class="visually-hidden">В корзину</span></button>
+              <button class="basket-button" type="button">
+                <span class="visually-hidden">В корзину</span>
+                <svg class="basket-icon" width="16" height="16" aria-hidden="true" focusable="false">
+                  <use href="images/icons/cart.svg#cart"></use>
+                </svg>
+              </button>
             </div>
           </li>
 
@@ -223,7 +296,12 @@
             <p class="catalog-text">Фисташковый пломбир с шоколадным сиропом</p>
             <div class="catalog-footer">
               <b class="catalog-price">360 ₽/кг</b>
-              <button class="basket-button" type="button"><span class="visually-hidden">В корзину</span></button>
+              <button class="basket-button" type="button">
+                <span class="visually-hidden">В корзину</span>
+                <svg class="basket-icon" width="16" height="16" aria-hidden="true" focusable="false">
+                  <use href="images/icons/cart.svg#cart"></use>
+                </svg>
+              </button>
             </div>
           </li>
 
@@ -234,7 +312,12 @@
             <p class="catalog-text">Классическое крем-брюле</p>
             <div class="catalog-footer">
               <b class="catalog-price">280 ₽/кг</b>
-              <button class="basket-button" type="button"><span class="visually-hidden">В корзину</span></button>
+              <button class="basket-button" type="button">
+                <span class="visually-hidden">В корзину</span>
+                <svg class="basket-icon" width="16" height="16" aria-hidden="true" focusable="false">
+                  <use href="images/icons/cart.svg#cart"></use>
+                </svg>
+              </button>
             </div>
           </li>
         </ul>
@@ -279,24 +362,33 @@
         <li class="social-item">
           <a class="social-link" href="https://t.me/htmlacademy">
             <span class="visually-hidden">Телеграм</span>
+            <svg width="24" height="24" aria-hidden="true" focusable="false">
+              <use href="images/icons/social/telegram.svg#telegram"></use>
+            </svg>
           </a>
         </li>
 
         <li class="social-item">
           <a class="social-link" href="https://vk.com/htmlacademy">
             <span class="visually-hidden">ВКонтакте</span>
+            <svg width="24" height="24" aria-hidden="true" focusable="false">
+              <use href="images/icons/social/vk.svg#vk"></use>
+            </svg>
           </a>
         </li>
 
         <li class="social-item">
           <a class="social-link" href="https://www.youtube.com/user/htmlacademy">
             <span class="visually-hidden">YouTube</span>
+            <svg width="24" height="24" aria-hidden="true" focusable="false">
+              <use href="images/icons/social/youtube.svg#youtube"></use>
+            </svg>
           </a>
         </li>
       </ul>
 
       <ul class="footer-about-list">
-        <li class="footer-about-item">
+        <li class="footer-about-item footer-about-provider">
           <a class="footer-link" href="#"><strong>Для поставщиков</strong></a>
         </li>
 
@@ -316,7 +408,11 @@
         <a href="https://htmlacademy.ru/">
           <img src="images/logos/logo-htmlacademy.svg" width="93" height="27" alt=".htmlacademy">
         </a>
-        <p class="about-text">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a></p>
+        <p class="about-text">
+          Сделано в
+          <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a>
+          © 2021
+        </p>
       </div>
     </footer>
   </body>
