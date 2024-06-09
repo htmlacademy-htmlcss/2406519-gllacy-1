@@ -5,24 +5,27 @@
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
   </head>
 
   <body>
     <div class="page">
-      <div class="page-contaner">
+      <div class="page-container">
         <header class="page-header">
           <nav class="navigation">
-            <a href="index.html"><img class="logo" src="images/logos/logo.svg" width="137" height="56" alt="Глейси"></a>
+            <a href="index.html">
+              <img class="logo" src="images/logos/logo.svg" width="137" height="56" alt="Глейси">
+            </a>
             <ul class="navigation-list">
               <li class="popover">
-                <button class="navigation-link" type="button">Каталог</button>
+                <button class="navigation-link navigation-link-dropdown popover-open" type="button">Каталог</button>
                 <ul class="popover-body popover-body-left">
                   <li class="popover-item">
-                    <a class="popover-link popover-new" href="catalog-creamy.html">Новинки</a>
+                    <a class="popover-link popover-new" href="#">Новинки</a>
                   </li>
 
                   <li class="popover-item">
-                    <a class="popover-link" href="#">Сливочное</a>
+                    <a class="popover-link popover-link-current" href="catalog-creamy.html" aria-current="page">Сливочное</a>
                   </li>
 
                   <li class="popover-item">
@@ -53,37 +56,100 @@
                 <a class="phone" href="tel:+78005558628">+7 800 555-86-28</a>
               </li>
 
-              <li>
-                <a class="navigation-link user-link user-icon" href="#">
+              <li class="popover">
+                <a class="navigation-link user-link user-icon popover-open" href="#">
                   <span class="visually-hidden">Поиск</span>
                   <svg class="navigation-icon" width="16" height="16" aria-hidden="true" focusable="false">
                     <use href="images/icons/search.svg#search"></use>
                   </svg>
                 </a>
+                <form class="popover-body popover-search" action="https://echo.htmlacademy.ru" method="get">
+                  <label for="search" class="visually-hidden">Поиск по сайту</label>
+                  <input class="form-input" type="search" id="search" name="search" placeholder="Поиск по сайту" required>
+                  <button class="search-clear clear-button clear-button-secondary" type="reset">
+                    <span class="visually-hidden">Очистить поисковый запрос</span>
+                  </button>
+                </form>
               </li>
 
-              <li>
-                <a class="navigation-link user-link" href="#">
+              <li class="popover">
+                <a class="navigation-link user-link popover-open" href="#">
                   <svg class="navigation-icon" width="16" height="16" aria-hidden="true" focusable="false">
                     <use href="images/icons/log-in.svg#log-in"></use>
                   </svg>
                   Вход
                 </a>
+
+                <div class="popover-body popover-content">
+                  <p class="accent-text">Личный кабинет</p>
+                  <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
+                    <label for="login-usermail" class="visually-hidden">Email</label>
+                    <input class="form-input" type="email" id="login-usermail" name="login_usermail"
+                      placeholder="email@example.com" value="email@example.com" required>
+                    <label for="login-password" class="visually-hidden">Пароль</label>
+                    <input class="form-input" type="password" id="login-password" name="login_password" value="xxxxxx"
+                      required>
+                    <div class="registration">
+                      <button class="button button-accent modal-button" type="submit">Войти</button>
+                      <div class="registration-help">
+                        <a class="registration-log" href="#">Забыли пароль?</a>
+                        <a class="registration-log" href="#">Регистрация</a>
+                      </div>
+                    </div>
+                  </form>
+                </div>
               </li>
 
-              <li>
-                <a class="navigation-link user-link" href="#">
+              <li class="popover">
+                <a class="navigation-link user-link popover-open" href="#">
                   <span class="visually-hidden">Корзина</span>
                   <svg class="navigation-icon" width="16" height="16" aria-hidden="true" focusable="false">
                     <use href="images/icons/cart.svg#cart"></use>
                   </svg>
                   2 товара
                 </a>
+
+                <!-- Показывается, когда в корзине нет товаров -->
+                <!-- <p class="popover-body cart-item-zero">Ваша корзина пока пуста</p> -->
+
+                <form class="popover-body popover-content popover-cart" action="https://echo.htmlacademy.ru" method="post">
+                  <p class="accent-text">Корзина</p>
+                  <ul class="cart-list">
+                    <li class="cart-item">
+                      <img src="images/catalog/raspberry-card.png" width="46" height="46" alt="Малинка">
+                      <div class="cart-product">
+                        <p class="cart-text">Малинка</p>
+                        <p class="cart-value">1 кг x 310 ₽</p>
+                      </div>
+                      <p class="cart-text">310 ₽</p>
+                      <button class="clear-button" type="button">
+                        <span class="visually-hidden">Удалить</span>
+                      </button>
+                      <input type="hidden" name="good_ids" value="1">
+                    </li>
+                    <li class="cart-item">
+                      <img src="images/catalog/bubble-gum-card.png" width="46" height="46" alt="Малинка">
+                      <div class="cart-product">
+                        <p class="cart-text">Бабл-гам</p>
+                        <p class="cart-value">1,5 кг x 320 ₽</p>
+                      </div>
+                      <p class="cart-text">480 ₽</p>
+                      <button class="clear-button" type="button">
+                        <span class="visually-hidden">Удалить</span>
+                      </button>
+                      <input type="hidden" name="good_ids" value="2">
+                    </li>
+                  </ul>
+                  <div class="cart-result">
+                    <button class="button button-accent" type="submit">Оформить заказ</button>
+                    <p class="cart-text cart-price">Итого: 790 ₽</p>
+                  </div>
+                </form>
               </li>
             </ul>
           </nav>
         </header>
-        <main class="main-container main-index">
+        <main class="main-container">
           <ol class="breadcrumbs">
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link" href="index.html">Главная</a>
@@ -98,7 +164,7 @@
               </svg>
             </li>
             <li>
-              <a class="breadcrumbs-link breadcrumbs-link-current" href="catalog-creamy.html">Сливочное мороженое</a>
+              <a class="breadcrumbs-link breadcrumbs-link-current" href="catalog-creamy.html" aria-current="page">Сливочное мороженое</a>
             </li>
           </ol>
           <h1 class="main-title">Сливочное мороженое</h1>
@@ -114,9 +180,19 @@
             </fieldset>
 
             <fieldset class="filters-set">
-              <legend class="filters-title">Цена: 100₽ - 500₽</legend>
-              <div class="filters-set-body">
-                <!--шкала через js-->
+              <legend class="filters-title">Цена: 100 ₽ – 500 ₽</legend>
+              <div class="filters-set-body range">
+                <input type="hidden" name="price" value="100">
+                <input type="hidden" name="price" value="500">
+                <div class="range-scale">
+                  <div class="range-value" style="left: 32px; width: 72px;"></div>
+                  <button class="range-control" type="button" style="left: 24px;">
+                    <span class="visually-hidden">От</span>
+                  </button>
+                  <button class="range-control" type="button" style="left: 96px;">
+                    <span class="visually-hidden">До</span>
+                  </button>
+                </div>
               </div>
             </fieldset>
 
@@ -124,52 +200,60 @@
               <legend class="filters-title">Жирность</legend>
               <div class="filters-set-body">
                 <label class="checker">
-                  <input disabled class="checker-input" type="radio" name="percent_fat" value="0">0%
+                  <input class="checker-input" type="radio" name="percent_fat" value="0">
+                  0%
                 </label>
                 <label class="checker">
-                  <input class="checker-input" type="radio" name="percent_fat" value="10" checked>10%
+                  <input class="checker-input" type="radio" name="percent_fat" value="10" checked>
+                  до 10%
                 </label>
                 <label class="checker">
-                  <input class="checker-input" type="radio" name="percent_fat" value="30">30%
+                  <input class="checker-input" type="radio" name="percent_fat" value="30">
+                  до 30%
                 </label>
                 <label class="checker">
-                  <input class="checker-input" type="radio" name="percent_fat" value="gt30">больше 30%
+                  <input class="checker-input" type="radio" name="percent_fat" value="gt30">
+                  выше 30%
                 </label>
               </div>
             </fieldset>
 
             <fieldset class="filters-set">
               <legend class="filters-title">Наполнители</legend>
-              <div class="filters-set-body">
+              <div class="filters-set-body filters-set-body-big">
                 <label class="checker">
-                  <input class="checker-input" type="checkbox" name="filler" value="chocolate" checked>шоколадные
+                  <input class="checker-input" type="checkbox" name="filler" value="chocolate" checked>
+                  шоколадные
                 </label>
                 <label class="checker">
-                  <input class="checker-input" type="checkbox" name="filler" value="sugar" checked>сахарные посыпки
+                  <input class="checker-input" type="checkbox" name="filler" value="sugar" checked>
+                  сахарные посыпки
                 </label>
                 <label class="checker">
-                  <input class="checker-input" type="checkbox" name="filler" value="fruit">фрукты
+                  <input class="checker-input" type="checkbox" name="filler" value="fruit">
+                  фрукты
                 </label>
                 <label class="checker">
-                  <input class="checker-input" type="checkbox" name="filler" value="syrup">сиропы
+                  <input class="checker-input" type="checkbox" name="filler" value="syrup">
+                  сиропы
                 </label>
                 <label class="checker">
-                  <input class="checker-input" type="checkbox" name="filler" value="jam">джемы
+                  <input class="checker-input" type="checkbox" name="filler" value="jam">
+                  джемы
                 </label>
               </div>
             </fieldset>
 
-            <fieldset class="filters-submit">
-              <button class="hero-catalog-creamy-button" type="submit">Применить</button>
-            </fieldset>
+            <button class="filters-submit" type="submit">Применить</button>
           </form>
           <section class="page-catalog-creamy">
+            <h2 class="visually-hidden">Каталог</h2>
             <ul class="catalog-list">
               <li class="catalog-item">
                 <img class="catalog-image" src="images/catalog/raspberry-card.png" width="168" height="168"
                   alt="Малинка">
                 <h3 class="catalog-name">Малинка</h3>
-                <p class="catalog-text">Сливочное мороженое с малиновым джемом</p>
+                <p class="catalog-text">Сливочное мороженое с&nbsp;малиновым джемом</p>
                 <div class="catalog-footer">
                   <b class="catalog-price">310 ₽/кг</b>
                   <button class="basket-button" type="button">
@@ -185,7 +269,7 @@
                 <img class="catalog-image" src="images/catalog/pistachio-card.png" width="168" height="168"
                   alt="Фисташка">
                 <h3 class="catalog-name">Фисташка</h3>
-                <p class="catalog-text">Фисташковый пломбир с кусочками шоколада</p>
+                <p class="catalog-text">Фисташковый пломбир с&nbsp;кусочками шоколада</p>
                 <div class="catalog-footer">
                   <b class="catalog-price">340 ₽/кг</b>
                   <button class="basket-button" type="button">
@@ -201,7 +285,7 @@
                 <img class="catalog-image" src="images/catalog/blueberry-card.png" width="168" height="168"
                   alt="Черника">
                 <h3 class="catalog-name">Черника</h3>
-                <p class="catalog-text">Крем-брюле с черничным джемом</p>
+                <p class="catalog-text">Крем-брюле с&nbsp;черничным джемом</p>
                 <div class="catalog-footer">
                   <b class="catalog-price">330 ₽/кг</b>
                   <button class="basket-button" type="button">
@@ -217,7 +301,7 @@
                 <img class="catalog-image" src="images/catalog/bubble-gum-card.png" width="168" height="168"
                   alt="Бабл-гам">
                 <h3 class="catalog-name">Бабл-гам</h3>
-                <p class="catalog-text">Ванильный пломбир со сладкой посыпкой</p>
+                <p class="catalog-text">Ванильный пломбир со&nbsp;сладкой посыпкой</p>
                 <div class="catalog-footer">
                   <b class="catalog-price">320 ₽/кг</b>
                   <button class="basket-button" type="button">
@@ -248,7 +332,7 @@
               <li class="catalog-item">
                 <img class="catalog-image" src="images/catalog/banana-card.png" width="168" height="168" alt="Банан">
                 <h3 class="catalog-name">Банан</h3>
-                <p class="catalog-text">Сливочный пломбир с банановым вкусом</p>
+                <p class="catalog-text">Сливочный пломбир с&nbsp;банановым вкусом</p>
                 <div class="catalog-footer">
                   <b class="catalog-price">340 ₽/кг</b>
                   <button class="basket-button" type="button">
@@ -280,7 +364,7 @@
                 <img class="catalog-image" src="images/catalog/strawberry-card.png" width="168" height="168"
                   alt="Клубничка">
                 <h3 class="catalog-name">Клубничка</h3>
-                <p class="catalog-text">Сливочный пломбир с клубничным вкусом</p>
+                <p class="catalog-text">Сливочный пломбир с&nbsp;клубничным вкусом</p>
                 <div class="catalog-footer">
                   <b class="catalog-price">300 ₽/кг</b>
                   <button class="basket-button" type="button">
@@ -310,7 +394,7 @@
               <li class="catalog-item">
                 <img class="catalog-image" src="images/catalog/menthol-card.png" width="168" height="168" alt="Ментол">
                 <h3 class="catalog-name">Ментол</h3>
-                <p class="catalog-text">Сливочный пломбир с ментоловым сиропом</p>
+                <p class="catalog-text">Сливочный пломбир с&nbsp;ментоловым сиропом</p>
                 <div class="catalog-footer">
                   <b class="catalog-price">320 ₽/кг</b>
                   <button class="basket-button" type="button">
@@ -341,7 +425,7 @@
                 <img class="catalog-image" src="images/catalog/creme-brulee-card.png" width="168" height="168"
                   alt="Крем-брюле">
                 <h3 class="catalog-name">Крем-брюле</h3>
-                <p class="catalog-text">Классическое крем-брюле</p>
+                <p class="catalog-text">Классическое<br>крем-брюле</p>
                 <div class="catalog-footer">
                   <b class="catalog-price">280 ₽/кг</b>
                   <button class="basket-button" type="button">
@@ -356,7 +440,7 @@
             <button class="button pagination-button" type="button">Показать еще</button>
             <ul class="pagination">
               <li class="pagination-item">
-                <a class="pagination-link pagination-prev pagination-disabled">
+                <a class="pagination-link pagination-arrow pagination-prev pagination-disabled">
                   <span class="visually-hidden">Назад</span>
                 </a>
               </li>
@@ -382,7 +466,7 @@
               </li>
 
               <li class="pagination-item">
-                <a class="pagination-link pagination-next" href="#">
+                <a class="pagination-link pagination-arrow" href="#">
                   <span class="visually-hidden">Вперед</span>
                 </a>
               </li>
@@ -390,7 +474,7 @@
           </section>
         </main>
         <footer class="page-footer">
-          <ul class="social-list">
+          <ul class="page-footer-social-list social-list">
             <li class="social-item">
               <a class="social-link" href="https://t.me/htmlacademy">
                 <span class="visually-hidden">Телеграм</span>
@@ -425,11 +509,11 @@
             </li>
 
             <li class="footer-about-item">
-              <a class="footer-link" href="#">О производстве</a>
+              <a class="footer-link" href="#">Наши документы</a>
             </li>
 
             <li class="footer-about-item">
-              <a class="footer-link" href="#">Наши документы</a>
+              <a class="footer-link" href="#">О производстве</a>
             </li>
 
             <li class="footer-about-item">
@@ -437,10 +521,10 @@
             </li>
           </ul>
           <div>
-            <a href="https://htmlacademy.ru/">
+            <a class="htmlacademy-logo" href="https://htmlacademy.ru/">
               <img src="images/logos/logo-htmlacademy.svg" width="93" height="27" alt=".htmlacademy">
             </a>
-            <p class="about-text">
+            <p class="htmlacademy">
               Сделано в
               <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a>
               © 2021
@@ -449,6 +533,8 @@
         </footer>
       </div>
     </div>
+
+    <script src="scripts/scripts.js"></script>
   </body>
 
 </html>
